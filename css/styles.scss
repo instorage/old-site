@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300|Open+Sans');
+
+/*####################  
+****** VARIABLES ****** 
+#####################*/
+
+$bodyFont: 'Open Sans';
+$titleFont: 'Lato';
+$bgColor: #f8f8f8;
+$navColor: #41e9ff;
+$h2Color: #02e3ff;
+$headerColor: #fff;
+$fontColor: #000;
+$dateColor: #888;
+$footerColor: #777;
+
+/*##################  
+****** LAYOUT ****** 
+###################*/
+
+
+/* general */
+
+a,
+a:active,
+a:fucus {
+    outline: none;
+}
+
+*::-moz-selection {
+    color: #fdf;
+    background: rgba(0, 0, 0, .4);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
+}
+
+*::selection {
+    color: #fdf;
+    background: rgba(0, 0, 0, .4);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
+}
+
+body {
+    font-family: $bodyFont, sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin: 0 20px;
+    p {
+        margin: 0;
+        padding: 0 0 16px 0;
+    }
+}
+
+h1 {
+    margin: 0;
+    // padding: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+}
+
+h1,
+h2 {
+    font-family: $titleFont, sans-serif;
+    font-weight: 200;
+}
+
+
+/****  HEADER  - layout ****/
+
+header {
+    // padding-bottom: 40px;
+    clear: both;
+    height: 400px;
+    z-index: 0;
+    transition: background-size .1s;
+    .container {
+        position: relative;
+        background: red;
+    }
+    #header-title {
+        position: absolute;
+        // background: blue;
+        top: 125px;
+        right: -10px;
+        color: #fff;
+        h1 {
+            display: none;
+        }
+        h2 {
+            display: none;
+        }
+        p {
+            font-size: .9em;
+        }
+        img {
+            height: 60px;
+        }
+    }
+}
+
+.title {
+    img {
+        margin-top: 4px;
+        height: 30px;
+    }
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    z-index: 150;
+    h1 {
+        display: none;
+    }
+    div.title {
+        float: left;
+        font-size: 1.3em;
+    }
+    ul {
+        margin: 0;
+        padding: 9px 0 0;
+        float: right;
+    }
+    li {
+        display: inline;
+        outline: 0;
+        a,
+        a:active, // a:focus 
+        {
+            text-decoration: none;
+            padding: 8px 15px;
+            outline: 0;
+        }
+        a:hover,
+        &.active a {
+            outline: 0;
+        }
+        a:fucus {
+            outline: none;
+        }
+    }
+}
+
+.shadow {
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .10), 0px 1px 1px rgba(0, 0, 0, .12);
+}
+
+
+/**** PORTFOLIO - layout ****/
+
+#portfolio {
+    ul {
+        margin: 0;
+        padding: 0 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        /*justify-content: space-around;*/
+        list-style: none;
+    }
+    li {
+        box-sizing: border-box;
+        flex-basis: 50%;
+        /*display: inline-block;*/
+        width: 100%;
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.portfolioItem {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/**** OBJECTIVE - layout ****/
+
+
+/**** SKILLS - layout ****/
+
+
+/**** EXPERIENCE - layout ****/
+
+.job {
+    border-bottom: 1px solid #999;
+    padding-top: 10px;
+    i {
+        font-weight: bold;
+    }
+}
+
+.date {
+    font-style: italic;
+    font-size: .8em;
+    display: block;
+}
+
+.job-title {
+    font-size: 1.5em;
+    font-family: $titleFont, sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+}
+
+.icon {
+    background-image: url("/img/fb_tw_in.svg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 55px;
+    height: 48px;
+    display: inline-block;
+    margin: 20px
+}
+
+.fb {
+    background-position: 0 0;
+}
+
+.tw {
+    background-position: -145px 0;
+}
+
+.in {
+    background-position: -75px 0;
+}
+
+
+/*#################  
+****** COLOR ****** 
+##################*/
+
+body {
+    color: $fontColor;
+    background: $bgColor;
+}
+
+
+/****  HEADER  - color ****/
+
+#top-menu li.active a {
+    border-top: 3px solid #333;
+    color: #333;
+}
+
+header {
+    background: $headerColor;
+    background-image: url('/img/ron.jpg');
+    background-repeat: no-repeat;
+    background-color: #2b2b2b;
+    //  background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    // background-image: url("/img/sigLogo.svg")
+}
+
+h2 {
+    color: $h2Color;
+    color: $h2Color;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8), 0px 4px 5px rgba(0, 0, 0, .2);
+}
+
+.date {
+    color: $dateColor;
+}
+
+
+/***** NAVIGATION - color *******/
+
+nav {
+    background: $navColor url("/img/nav.svg") no-repeat center/100%;
+    li {
+        a,
+        a:active, //    a:focus,
+        a:visited {
+            color: $fontColor;
+            // transition: text-shadow 5s; 
+            transition: color .2s;
+        }
+        a:hover,
+        &.active a {
+            color: #fff;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, .5), 0px 4px 4px rgba(0, 0, 0, .1);
+        }
+    }
+}
+
+
+/**** REFERENCE - color ****/
+
+#references {
+    // background: pink;
+    display: none;
+}
+
+
+/**** FOOTER - color ****/
+
+footer {
+    background: $footerColor;
+    background: url("/img/bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/*################## 
+**** RESPONSIVE **** 
+###################*/
+
+@media screen and (min-width: 700px) {
+    header {
+        #header-title {
+            right: 30px;
+            p {
+                font-size: 1.3em;
+            }
+            img {
+                height: 80px;
+            }
+        }
+    }
+    #portfolio {
+        li {
+            box-sizing: border-box;
+            flex-basis: 33%;
+            /*display: inline-block;*/
+        }
+    }
+    .job-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .job {
+        flex-basis: 48%;
+        border: none;
+        /*border: 1px solid #000;*/
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+    #portfolio li {
+        box-sizing: border-box;
+        flex-basis: 25%;
+        /*display: inline-block;*/
+    }
+    header {
+        background-size: 900px;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    nav {
+        background-size: 200%;
+    }
+    #portfolio .container {
+        margin: 0;
+        h2,
+        p {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        background-size: 800px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        li {
+            a,
+            a:active {
+                font-size: .9em;
+                padding: 8px 5px;
+            }
+        }
+    }
+}

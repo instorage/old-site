@@ -1,0 +1,20 @@
+# exclude the following dirs
+designs
+test
+*.pyc
+*.db
+*.psd
+*.ai
+*.DS_Store
+*.eps
+*.zip
+oldCSS
+oldFiles
+succeedPersonally.html
+.sass-cache
+assets
+future
+localStorage.html
+.vscode
+typings
+tsd.json

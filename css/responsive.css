@@ -1,0 +1,26 @@
+@media screen and (min-width: 400px) {
+  .sig {
+    padding: 10px; } }
+@media screen and (min-width: 500px) {
+  .sig {
+    width: 400px;
+    padding: 10px; }
+
+  #portfolio li {
+    width: 33.333%; } }
+@media screen and (min-width: 800px) {
+  #portfolio li {
+    width: 25%; }
+
+  #logo h1, #logo h2 {
+    clear: both; }
+
+  .personalPicture {
+    display: inline-block;
+    width: 150px;
+    background: red;
+    margin-left: 80px; }
+
+  .sig {
+    display: inline-block;
+    margin-bottom: 10px; } }

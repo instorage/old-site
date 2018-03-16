@@ -1,0 +1,25 @@
+{
+  "name": "site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "server": "http-server -p 9966 -a 192.168.0.101",
+    "php": "php -S 192.168.0.101:9966",
+    "budo": "budo index.html --live",
+    "ugly": "uglifyjs js/analytics.js js/script.js --compress --mangle -o js/main.min.js",
+    "sass": "sass -w css -t compressed --sourcemap=none"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "pug": "~2.0.0-beta6",
+    "serve-favicon": "~2.3.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
